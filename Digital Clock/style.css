@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url("gradient.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: rgb(146, 2, 119);
+}
+
+h1 {
+    font-size: 49px;
+    font-weight: 700;
+    padding: 22px;
+    filter: drop-shadow(0 0 0.75rem rgba(220, 20, 60, 0.315));
+}
+
+.clock {
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 1px 1px 10px rgba(65, 2, 65, 0), 0px 10px 180px rgba(255, 255, 255, 0.6); */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 24vh;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.clock h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.clock span {
+    position: relative;
+    top: -13%;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media screen and (max-width : 274px) {
+    .clock {
+        max-width: 210px;
+        padding: 5px;
+    }
+
+    .clock h1 {
+        font-size: 1.9rem;
+    }
+    
+}
+
+@media screen and (min-width: 275px) and (max-width : 400px) {
+    .clock {
+        max-width: 260px;
+        padding: 5px;
+    }
+
+    .clock h1 {
+        font-size: 2.4rem;
+    }
+    
+}
+

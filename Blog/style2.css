@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.join {
+    height: 40rem;
+    width: 32rem;
+    border: 2px solid brown;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.join> :first-child {
+    /* text-align: center; */
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.google {
+    border: 2px solid black;
+    border-radius: 1rem;
+    height: 2.5rem;
+    width: 20rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 400;
+    margin: 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.google img {
+    height: 1.5rem;
+}
+
+.acc> :nth-child(2){
+    cursor: pointer;
+    color: rgb(0, 88, 139);
+    text-decoration: underline;
+}
+
+/* .acc> :nth-child(2) :hover {
+    color: darkcyan;
+    text-decoration: underline;
+} */
